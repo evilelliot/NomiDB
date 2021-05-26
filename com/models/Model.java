@@ -4,7 +4,8 @@ public class Model {
     protected String[] modelData;
     public Model(String[] modelData){
         this.modelData = modelData;
-    }   
+    }
+    
     @Override
     public String toString(){
         String MD = "";

@@ -49,7 +49,7 @@ public class DB {
                     System.out.println("New table :" + tableURL + " created");
                 }else{
                     ObjectInputStream fileReader = new ObjectInputStream(new FileInputStream(tableURL));
-                    System.out.println(fileReader.available());
+                    //System.out.println(fileReader.available());
                     NavigableMap<Integer, String> tables = (NavigableMap<Integer, String>) fileReader.readObject();
                     if(tables.size() >= 1){
                         Entry<Integer, String> last_entry = tables.lastEntry();

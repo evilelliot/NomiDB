@@ -1,6 +1,8 @@
 package com.controllers;
 
-public class TicketsController implements Controller{
+import java.io.Serializable;
+
+public class TicketsController implements Controller, Serializable{
 
     @Override
     public void create() {
